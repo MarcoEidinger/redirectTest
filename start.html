@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<button onclick="showCookies()">Show cookies</button>
+  <button onclick="redirect()">Redirect</button>
+<div>
+<code id="cookies"></code>
+</div>
+</body>
+<script>
+function showCookies() {
+  const output = document.getElementById("cookies");
+  output.textContent = `> ${document.cookie}`;
+}
+
+function redirect() {
+location="https://marcoeidinger.github.io/redirectTest/meep.html"
+}
+</script>
+</html>
