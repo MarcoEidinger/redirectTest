@@ -4,3 +4,5 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Content-Security-Policy: script-src 'self' 'unsafe-inline'; frame-ancestors *
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload;
+  cache-control: max-age=0,no-cache,no-store,must-revalidate
