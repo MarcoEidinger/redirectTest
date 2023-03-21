@@ -1,11 +1,11 @@
 # a path:
-start.html
+./start.html
   # headers for that path:
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Content-Security-Policy: script-src 'self' 'unsafe-inline'; frame-ancestors *
 # another path:
-/templates/index2.html
+./test.html
   # headers for that path:
   X-Frame-Options: SAMEORIGIN
