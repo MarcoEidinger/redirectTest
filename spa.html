@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SPA Demo</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+
+        header {
+
+            background-color: #333;
+
+            color: white;
+
+            padding: 10px;
+
+            text-align: center;
+
+        }
+
+
+
+        nav {
+
+            display: flex;
+
+            background-color: #f1f1f1;
+
+            padding: 10px;
+
+        }
+
+
+
+        nav a {
+
+            text-decoration: none;
+
+            color: #333;
+
+            padding: 10px;
+
+            margin: 5px;
+
+            border-radius: 5px;
+
+            background-color: #ddd;
+
+            transition: background-color 0.3s;
+
+        }
+
+
+
+        nav a:hover {
+
+            background-color: #ccc;
+
+        }
+
+
+
+        #content {
+
+            padding: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <h1>SPA Demo</h1>
+
+    </header>
+
+
+
+    <nav>
+
+        <a href="#" onclick="navigateTo('home')">Home</a>
+
+        <a href="#" onclick="navigateTo('about')">About</a>
+
+        <a href="#" onclick="navigateTo('contact')">Contact</a>
+
+    </nav>
+
+
+
+    <div id="content">
+
+        <!-- Content will be dynamically loaded here -->
+
+    </div>
+
+
+
+    <script>
+
+        // Initial content
+
+        document.getElementById('content').innerHTML = '<h2>Welcome to the Home Page!</h2>';
+
+
+
+        // Function to navigate without page reload
+
+        function navigateTo(page) {
+
+            if (page === 'home') {
+
+                document.getElementById('content').innerHTML = '<h2>Welcome to the Home Page!</h2>';
+
+            } else if (page === 'about') {
+
+                document.getElementById('content').innerHTML = '<h2>About Us</h2><p>This is the about page content.</p>';
+
+            } else if (page === 'contact') {
+
+                document.getElementById('content').innerHTML = '<h2>Contact Us</h2><p>Feel free to reach out to us!</p>';
+
+            }
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
