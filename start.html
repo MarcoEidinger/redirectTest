@@ -4,7 +4,9 @@
 </head>
 <body>
 <button onclick="showCookies()">Show cookies</button>
-  <button onclick="redirect()">Redirect</button>
+<button onclick="redirect()">Redirect</button>
+<br>
+<button onclick="redirectLocalhost()">Redirect to localhost</button>
 <div>
 <code id="cookies"></code>
 </div>
@@ -17,6 +19,9 @@ function showCookies() {
 
 function redirect() {
 location="https://main--me-redirect-test.netlify.app/meep.html"
+}
+  function redirect() {
+location="http://localhost:3000/redirect.html"
 }
 </script>
 </html>
